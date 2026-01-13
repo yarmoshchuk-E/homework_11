@@ -52,11 +52,10 @@ public class Main {
 
         System.out.println("Task_4");
         int[] inputArray4 = {580, 475, 120, -50, 0};
-        boolean[] outputArray4 = new boolean[1];
-        int index4 = 0;
+        boolean[] outputArray4 = {true};
         for (int accountBalance : inputArray4) {
             if (accountBalance < 0) {
-                outputArray4[index4] = false;
+                outputArray4[0] = false;
                 break;
             }
         }
@@ -67,13 +66,11 @@ public class Main {
         System.out.println("Task_5");
         int[] inputArray5 = {3000, -2000, 0, 6300, -3500};
         int[] outputArray5 = new int[1];
-        int index5 = 0;
         int count = 0;
         for (int profit : inputArray5) {
             if (profit < 0) {
                 count++;
             }
-            index5++;
             outputArray5[0] = count;
         }
         System.out.println(Arrays.toString(inputArray5));
